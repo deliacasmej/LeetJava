@@ -1,0 +1,29 @@
+//CS200 
+//Fall 2021 
+//Delia E Castrejon
+//Loops HW#1 Arrays
+//Due: 10.15.2021 
+//File name: Reverse.java 
+
+import java.util.Scanner;
+
+public class Reverse
+{
+   public static void main(String[] args)
+   {
+      Scanner kbd = new Scanner(System.in);
+              
+      int[] arr = new int[10];
+      int count = 0;
+      System.out.print(" Enter 10 integers: ");
+      
+      for (int i = 0; i<arr.length; i++)
+            arr[i] = kbd.nextInt();
+      
+      System.out.print("This is the reverse: ");  //has to be outside loop or will print for every int
+      for(int x = arr.length -1; x>=0; x--)
+      {
+          System.out.print(arr[x] + " " );
+      }
+   
+   }
